@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/signUP.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="">
+        <div class="card text-center  w-75 m-auto mt-5">
+          <h1>Smart Login System</h1>
+          <div class="cradBody text-center">
+            <div class="mb-3 row">
+                <label for="Name" class=""></label>
+                <div class="col-sm-10 m-auto">
+                  <input type="text" class="form-control" id="Name" placeholder="Enter your name">
+                  <div class="alert alert-danger d-none" id="nameAlert">At least Two Character Name</div>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="Email" class=""></label>
+              <div class="col-sm-10 m-auto">
+                <input type="text" class="form-control" id="Email" placeholder="Enter your Email">
+                <div class="alert alert-danger d-none" id="emailAlert">Please Enter a valid Email</div>
+            </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="Password" class=""></label>
+              <div class=" col-sm-10 m-auto mb-4">
+                <input type="password" class="form-control " id="Password" placeholder="Enter your Passwoard">
+                <div class="alert alert-danger d-none" id="passwordAlert">at least 6 characters in length,1 upper and 1 lower case letter <br>
+                  (?=.*[!#$%&? "]) Passwords will contain at least given special characters
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid col-sm-10 m-auto ">
+              <button class="mybtn btn btn-primary mb-3 " type="button" id="signUp" >Sign Up</button>
+              <div class="alert alert-danger d-none" id="existAlert">Eamil is already exist</div>
+              <div class="alert alert-success d-none" id="successAlert">Success You Can Login</div>
+            </div>
+            <div class="cardFooter mb-5">
+              <p>You have an account? <a href="index.html"> Sign In</a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script src="js/signUp.js" ></script>
+</body>
+</html>
